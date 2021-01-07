@@ -1,0 +1,28 @@
+<section class="section">
+  <div class="section-center">
+    <div class="container-search">
+
+      <form #form="ngForm" novalidate>
+        <div class="form-control">
+          <input
+            type="text"
+            name="search"
+            ngModel
+            placeholder="Digite o título ou parte do título de um filme para pesquisar"
+            autocomplete="off"
+            required
+            #inputSearch="ngModel"
+            (ngModelChange)="pesquisar($event)"
+          />
+        </div>
+      </form>
+    </div>
+
+    <div class="container-card">
+      <div class="card" *ngFor="let movie of movies">
+        <app-movie [movie]="movie"></app-movie>
+      </div>
+    </div>
+
+  </div>
+</section>

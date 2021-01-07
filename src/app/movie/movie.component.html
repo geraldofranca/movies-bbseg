@@ -1,0 +1,19 @@
+<a [routerLink]="['/movie', movie.id]">
+<section class="movie_image">
+  <img class="movie_poster" [src]="movie.poster_path" [alt]="movie.title" />
+</section>
+
+<section class="center">
+  <div class="about_movie">
+    <h3>{{ movie.title }}</h3>
+    <div class="movie_info">
+      <p>{{ movie?.release_date | date: 'dd/MM/yyyy'}}</p>
+      <p>1h 33min</p>
+      <p>Horror, Mystery, Thriller </p>
+    </div>
+    <div class="movie_desc">
+      <p>{{ movie.overview }}</p>
+    </div>
+  </div>
+</section>
+</a>

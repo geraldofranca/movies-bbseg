@@ -1,0 +1,46 @@
+.container-search {
+  width: 100%;
+  position: relative;
+  display: grid;
+  gap: 1rem 1.75rem;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    h3 {
+      padding: 0 0.5rem;
+    }
+  }
+
+  .form-control {
+    background: #fff;
+    display: grid;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0.5rem;
+
+    input {
+      border-color: transparent;
+      padding: 0.25rem 0.5rem 0.5rem;
+      border-bottom: 1px solid #26a69a;
+      font-size: 24px;
+    }
+  }
+}
+
+.container-card {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background:#fff;
+  display: flex;
+  max-width: 375px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, .2);
+  margin: 15px 0 15px 10px;
+  flex-direction: column;
+  height: auto;
+}

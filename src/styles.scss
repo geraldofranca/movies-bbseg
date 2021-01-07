@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --clr-background: #fff;
+  --clr-header: #1565C0;
+  --clr-footer: #1565C0;
+  --clr-title: #fad217;
+  --ff-primary: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-background);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  -webkit-font-smoothing: antialiased
+}
+
+body, input, button {
+  // font-family: var(--ff-primary);
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.section {
+  padding: 1rem 0;
+  position: relative;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
