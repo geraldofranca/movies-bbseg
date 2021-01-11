@@ -20,7 +20,6 @@ export class HomeComponent implements OnInit {
   pesquisar(obj: string) {
     if (obj.length > 2) {
       this.movieService.searchMovies(obj).subscribe(resp => {
-        console.log(resp)
         this.movies = resp.results
         this.movies.map(movie => movie.poster_path = `http://image.tmdb.org/t/p/w300${movie.poster_path}`)
       })

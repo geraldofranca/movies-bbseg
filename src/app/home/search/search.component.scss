@@ -1,0 +1,42 @@
+.container-search {
+  width: 100%;
+  position: relative;
+  display: grid;
+  gap: 1rem 1.75rem;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    h3 {
+      padding: 0 0.5rem;
+    }
+  }
+
+  .form-control {
+    display: grid;
+    grid-template-columns: 1100px 70px;
+    justify-content: space-between;
+    margin: 0 auto;
+    column-gap: 40px;
+    margin-bottom: 20px;
+    max-width: 1170px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #c1c6cc;
+
+    input {
+      width: 1170px;
+      background: var(--clr-background);
+      font-family: var(--ff-secondary);
+      border: none;
+      font-size: 24px;
+    }
+  }
+}
+
+.btn-search {
+  border: none;
+  background: transparent;
+}
+
+.section {
+  background: var(--clr-background);
+}

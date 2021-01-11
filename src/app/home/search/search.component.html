@@ -1,0 +1,20 @@
+<section class="section">
+  <div class="section-center">
+    <div class="container-search">
+
+      <form #form="ngForm" (submit)="submit()" >
+        <div class="form-control">
+          <input
+            type="text"
+            name="search"
+            [(ngModel)]="search"
+            placeholder="Digite o título ou parte do título de um filme para pesquisar"
+            autocomplete="off"
+            required
+          />
+          <button class="btn-search" type="submit"><img src="../../../assets/fa-search.png" alt="" /></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

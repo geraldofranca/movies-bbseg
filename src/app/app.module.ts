@@ -11,6 +11,10 @@ import { MovieComponent } from './movie/movie.component';
 import { MovieService } from './movie/movie.service';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { SearchComponent } from './home/search/search.component';
+import { NewmovieComponent } from './home/newmovie/newmovie.component';
+import { SearchResultComponent } from './home/search-result/search-result.component';
+import { SimilarMovieComponent } from './movie-detail/similar-movie/similar-movie.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { FooterComponent } from './layout/footer/footer.component';
     HomeComponent,
     MovieComponent,
     MovieDetailComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent,
+    NewmovieComponent,
+    SearchResultComponent,
+    SimilarMovieComponent
   ],
   imports: [
     BrowserModule,

@@ -18,4 +18,15 @@ export class MovieService {
     return this.httpClient
       .get<Movie>(`${environment.REST_API_SERVER}/movie/${id}?api_key=${environment.API_KEY}&language=${environment.LANGUAGE}`)
   }
+
+  getPopularMovies(): Observable<ReturnQueryMovies> {
+    return this.httpClient
+      .get<ReturnQueryMovies>(`${environment.REST_API_SERVER}/movie/popular?api_key=${environment.API_KEY}&language=${environment.LANGUAGE}`)
+  }
+
+  getSimilarMovies(id: number): Observable<ReturnQueryMovies> {
+    return this.httpClient
+      .get<ReturnQueryMovies>(`${environment.REST_API_SERVER}/movie/${id}/similar?api_key=${environment.API_KEY}&language=${environment.LANGUAGE}`)
+  }
+
 }

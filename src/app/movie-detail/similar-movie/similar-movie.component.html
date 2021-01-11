@@ -1,0 +1,14 @@
+<div class="movies">
+  <div class="options">
+    <span class="title">Filmes Semelhantes</span>
+  </div>
+
+  <div class="grid">
+    <div class="movie" *ngFor="let movie of similar ">
+      <a [routerLink]="['/movie', movie.id]">
+        <img [src]="movie.poster_path" [alt]="movie.title" class="poster" />
+        <span class="title">{{ movie.title }}</span>
+      </a>
+    </div>
+  </div>
+</div>

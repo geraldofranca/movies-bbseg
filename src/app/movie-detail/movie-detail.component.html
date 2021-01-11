@@ -1,39 +1,39 @@
-<div class="back">
-  <a href="javascript:history.back()">
-    <i class="fa fa-arrow-left" aria-hidden="true"></i>
-    <span>Voltar</span>
-  </a>
-</div>
-
-<div class="details">
-  <aside>
-    <img class="movie_poster" [src]="movie?.poster_path" [alt]="movie?.title" />
-  </aside>
-  <main>
+<section class="section">
+  <div class="header">
     <h1>{{ movie?.title }}</h1>
-    <div class="movieInfo">
-      <ul>
-        <li>
-          <i class="fa fa-clock-o" aria-hidden="true"></i>
-          <strong> Duração</strong>: {{ movie?.runtime }} minutos
-        </li>
-        <li>
-          <i class="fa fa-calendar" aria-hidden="true"></i>
-          <strong> Lançamento</strong>: {{ movie?.release_date | date: 'dd/MM/yyyy'}}
-        </li>
-        <li>
-          <i class="fa fa-globe" aria-hidden="true"></i>
-          <strong> Idioma original</strong>: {{ movie?.original_language }}
-        </li>
-        <li>
-          <i class="fa fa-align-justify" aria-hidden="true"></i>
-          <strong> Título original</strong>: {{ movie?.original_title }}
-        </li>
-        <li>
-          <i class="fa fa-file-text" aria-hidden="true"></i>
-          <strong> Sinopse</strong>: {{ movie?.overview }}
-        </li>
-      </ul>
+  </div>
+  <div class="summary-info">
+    <div class="runtime">
+      <span class="time">{{ movie?.runtime }}</span>
+      <span class="minutes">minutos</span>
     </div>
-  </main>
-</div>
+    <div class="statistic">
+      <div class="info">
+        <span class="time">{{ movie?.vote_average }}</span>
+        <span class="minutes">Média de votos</span>
+      </div>
+      <div class="info">
+        <span class="time">{{ movie?.vote_count}}</span>
+        <span class="minutes">Total de votos</span>
+      </div>
+      <div class="info">
+        <span class="time">{{ movie?.popularity }}</span>
+        <span class="minutes">Popularidade</span>
+      </div>
+      <div class="info">
+        <span class="time">{{ movie?.release_date | date: 'yyyy' }}</span>
+        <span class="minutes">Lançamento</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <h1>Sinopse</h1>
+  <div class="overview">
+    <img [src]="movie?.poster_path" [alt]="movie?.title" />
+    <p>{{ movie?.overview }}</p>
+  </div>
+<section>
+
+<app-similar-movie></app-similar-movie>

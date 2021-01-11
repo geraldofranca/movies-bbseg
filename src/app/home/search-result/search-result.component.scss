@@ -1,0 +1,45 @@
+.movies {
+  background: #34495e;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 50px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  max-width: 1170px;
+  margin: 0 auto;
+  grid-gap: 20px;
+
+  .movie {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    .poster {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .title {
+      font-family: var(--ff-secondary);
+      font-weight: 600;
+      font-size: 18px;
+      color: #feb900;
+      margin: 10px 0 5px 0;
+    }
+
+    .year {
+      padding: 0 5px 0 5px;
+      width: 40px;
+      background: #fff;
+      font-family: var(--ff-secondary);
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 50px;
+      color: #6a7988;
+      transition: all .2s ease;
+    }
+  }
+}

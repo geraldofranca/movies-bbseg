@@ -1,10 +1,35 @@
-footer {
+.footer-main {
   background-color: var(--clr-footer);
   bottom: 0;
   left: 0;
-  height: 60px;
-  position: fixed;
+  height: 50px;
   width: 100%;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 0 15px 0;
   color: var(--clr-title);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1000px 170px;
+  justify-content: space-between;
+  margin: 0 auto;
+  column-gap: 40px;
+  margin-bottom: 20px;
+  max-width: 1170px;
+  padding: 0 0 0 20px;
+
+  span {
+    color: #6f7d8b;
+    font-family: var(--ff-primary);
+    font-size: 14px;
+  }
+}
+
+.version {
+
+  b {
+    font-family: var(--ff-primary);
+    font-size: 12px;
+    color: #6f7d8b;
+  }
 }

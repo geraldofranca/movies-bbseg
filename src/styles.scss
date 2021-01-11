@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --clr-background: #fff;
+  --clr-background: #f4f4f4;
   --clr-header: #1565C0;
-  --clr-footer: #1565C0;
+  --clr-footer: #e5e5e5;
   --clr-title: #fad217;
+  --clr-grey-10: #f1f5f8;
   --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Montserrat', sans-serif;
 }
 
 * {
@@ -16,15 +19,13 @@
 }
 
 body {
-  font-family: var(--ff-primary);
-  background: var(--clr-background);
   line-height: 1.5;
   font-size: 0.875rem;
-  -webkit-font-smoothing: antialiased
+  margin-bottom: 100px;
+  -webkit-font-smoothing: antialiased;
 }
 
 body, input, button {
-  // font-family: var(--ff-primary);
   font-size: 16px;
 }
 
@@ -55,7 +56,7 @@ img {
 }
 
 .section-center {
-  width: 90vw;
+  // width: 90vw;
   margin: 0 auto;
   max-width: var(--max-width);
 }

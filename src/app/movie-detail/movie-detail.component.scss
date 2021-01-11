@@ -1,65 +1,85 @@
-.back {
-  max-width: 1130px;
+.section {
+  background: #34495e;
+  margin: 0 auto;;
+}
+
+.header {
+  color: #fff;
+  font-family: var(--ff-secondary);
+  font-size: 20px;
+  width: 100%;
   margin: 0 auto;
+  max-width: 1130px;
+}
+
+.summary-info {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 20px 20px;
+  max-width: 1130px;
+  margin: 15px auto;
+  font-family: var(--ff-secondary);
 
-  a {
-    color: black;
+  .statistic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    border-radius: 30px;
+    border: solid 1px #fff;
+    border-left: none;
+    margin-left: -65px;
+    padding: 10px 40px 10px 95px;
   }
 
-  i {
-    font-weight: 700;
-    font-size: 30px;
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  span {
-    margin-left: 15px;
-    margin-top: -4px;
-    font-size: 28px;
-    font-weight: 700;
+  .runtime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .time {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .minutes {
+    color: #fff;
+    font-size: 10px;
   }
 }
 
-.details {
-  max-width: 1130px;
-  margin: 0 auto;
+.story {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1130px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: var(--ff-secondary);
 
-  aside {
-    width: 320px;
-    padding: 0 20px;
-    margin-top: 15px;
+  h1 {
+    font-weight: 600;
   }
 
-  main {
-    flex: 1;
-    padding: 0 10px;
-    margin-top: 10px;
-  }
-}
+  .overview {
+    display: flex;
+    flex-direction: row;
 
-.movieInfo {
-  span {
-    font-size: 18px;
-    // color: var(--clr-grey-4);
-    margin-top: 5px;
-  }
+    img {
+      max-width: 320px;
+      margin-top: 15px;
+    }
 
-  ul {
-    margin-top: 10px;
-  }
-
-  li {
-    margin-bottom: 5px;
-    font-size: 16px;
-    color: var(--clr-grey-3);
-    strong {
-      font-weight: 700;
+    p {
+      padding: 15px 20px 20px 30px;
     }
   }
 }
