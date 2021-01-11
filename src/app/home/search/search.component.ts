@@ -33,11 +33,4 @@ export class SearchComponent implements OnInit {
       })
     }
   }
-
-  submit() {
-    this.router.navigate
-    this.router.navigate(['/movie/search-result', { movie: this.route.snapshot.paramMap.get('movie') }]);
-    this.onSearch.emit(this.search)
-    // return false
-  }
 }

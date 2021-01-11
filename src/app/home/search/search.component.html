@@ -2,15 +2,17 @@
   <div class="section-center">
     <div class="container-search">
 
-      <form #form="ngForm" (submit)="submit()" >
+      <form #form="ngForm" novalidate>
         <div class="form-control">
           <input
             type="text"
             name="search"
-            [(ngModel)]="search"
+            ngModel
             placeholder="Digite o título ou parte do título de um filme para pesquisar"
             autocomplete="off"
             required
+            #inputSearch="ngModel"
+            (ngModelChange)="pesquisar($event)"
           />
           <button class="btn-search" type="submit"><img src="../../../assets/fa-search.png" alt="" /></button>
         </div>

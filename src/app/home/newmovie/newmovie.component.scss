@@ -38,6 +38,11 @@
   max-width: 1170px;
   margin: 0 auto;
   grid-gap: 20px;
+  @media (max-width: 520px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
   .movie {
     display: flex;
